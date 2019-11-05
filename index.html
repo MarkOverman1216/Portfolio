@@ -1,145 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mark Overman</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Assets/css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Mark Overman</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
-  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" href="Assets/css/styles.css" />
-</head>
+  <body class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html" style="padding:8px;border: 1px solid black;;border-radius: 100%;">MO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<body class="bg-secondary">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#" style="padding:8px;border: 1px solid black;;border-radius: 100%;">MO</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact Me</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container">
-    <div class="row ">
-      <div class="col-sm-12 col-md-4 col-lg-3">
-        <div class="imgContainer profileImage">
-          <img src="./Assets/images/IMG_9530.JPG" class="img-fluid" style="border-radius: 10%;" />
-        </div>
-        <div class="bottomSection">
-          <div class="p-3">
-            <h2 class="name text-center">
-              Mark Overman
-            </h2>
-            <div class="socialLinks">
-              <ul style="list-style-type:none;">
-                <li>
-                  <a href="#" class="nav-link text-info">
-                    <i class="fab fa-facebook-f mr-3"></i>Facebook
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-info">
-                    <i class="fab fa-instagram icon mr-3"></i>Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-info d-flex">
-                    <i class="fab fa-linkedin-in icon mr-3"></i>LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-info">
-                    <i class="fab fa-github icon mr-3"></i>GitHub
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+        </ul>
       </div>
-      <div class="col">
-        <div class="container">
-          <div class="accordion " id="accordionExample">
-            <div class="card border-0 bg-secondary text-left">
-              <h2 class="mb-0"><button class="btn btn-link text-info" type="button" data-toggle="collapse"
-                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  About Me
-                </button></h2>
+    </nav>
 
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <div class="card border-0 bg-secondary text-left">
-              <h2 class="mb-0"><button class="btn btn-link text-info collapsed" type="button" data-toggle="collapse"
-                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Education
-                </button></h2>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <div class="card border-0 bg-secondary text-left">
-              <h2 class="mb-0"><button class="btn btn-link text-info collapsed" type="button" data-toggle="collapse"
-                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Experience
-                </button></h2>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="imgContainer profileImage">
+            <img src="./Assets/images/IMG_9530.JPG" class="img-fluid" style="border-radius: 10%;" />
+          </div>
+          <div class="bottomSection">
+            <div class="p-3">
+              <h2 class="name text-center">
+                Mark Overman
+              </h2>
+              <div class="socialLinks">
+                <ul style="list-style-type:none;">
+                  <li>
+                    <a href="https://www.facebook.com/Mark.E.Overman" class="nav-link text-info">
+                      <i class="fab fa-facebook-f mr-3"></i>Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/mark-overman-091bb618b/" class="nav-link text-info d-flex">
+                      <i class="fab fa-linkedin-in icon mr-3"></i>LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/MarkOverman1216" class="nav-link text-info">
+                      <i class="fab fa-github icon mr-3"></i>GitHub
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
+        <div class="col">
+          <div class="container">
+            <div class="accordion " id="accordionExample">
+              <div class="card border-0 bg-secondary text-left">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link text-info"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <h2>
+                      About Me
+                    </h2>
+                  </button>
+                </h2>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 bg-secondary text-left">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link text-info collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <h2>
+                      Education
+                    </h2>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 bg-secondary text-left">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link text-info collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <h2>
+                      Experience
+                    </h2>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
